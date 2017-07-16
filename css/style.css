@@ -1,0 +1,294 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #444;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  background: #fff;
+  overflow-x: hidden;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+.group {
+  position: relative; }
+
+ol,
+ul {
+  list-style: none;
+  display: block; }
+
+input {
+  text-rendering: auto;
+  letter-spacing: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  font: 13.33333px Arial; }
+
+#header {
+  width: 100%;
+  height: 56px;
+  background: #333;
+  background: rgba(47, 47, 47, 0.98);
+  z-index: 9996; }
+  @media only screen and (max-width: 959px) {
+    #header {
+      position: fixed;
+      will-change: transform;
+      top: 0;
+      height: 40px; } }
+
+#header-inner {
+  margin: 0 auto;
+  padding: 0 10px 0 30px; }
+
+#logo {
+  float: left;
+  padding: 0 20px 0 0; }
+  @media only screen and (max-width: 959px) {
+    #logo {
+      float: none;
+      padding-right: 0;
+      text-align: left; } }
+  #logo a {
+    display: block;
+    width: 76px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-image: url(https://cdn.dribbble.com/assets/logo-small-4612353cefa78dfe35ba5e8e9d35da9f9305a3a516ef9675b5c37004c5862b6d.png);
+    opacity: 1;
+    transition: opacity 0.2s ease; }
+    @media only screen and (max-width: 959px) {
+      #logo a {
+        margin: 0 auto 0 auto;
+        height: 40px; } }
+    #logo a:hover {
+      text-decoration: none;
+      color: #1e6189;
+      opacity: 0.5; }
+    #logo a img {
+      border: none; }
+  #logo img {
+    height: 0; }
+
+#toggle-nav {
+  display: none; }
+  @media only screen and (max-width: 959px) {
+    #toggle-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 48px;
+      height: 40px;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-position: 15px 50%;
+      background-image: url(https://cdn.dribbble.com/assets/icon-hamburger-81081334c82d4efd0892cd8d11a37e0fc36874131c243994f36f3e783216d7b2.png?4);
+      opacity: 0.5; } }
+
+#nav {
+  margin: 0 250px 0 20px;
+  color: #777; }
+  @media screen and (max-width: 959px) {
+    #nav {
+      float: left;
+      width: 100%;
+      margin: 0 0 10px;
+      text-align: left;
+      overflow: visible; } }
+  @media screen and (max-width: 1050px) {
+    #nav {
+      margin-right: 180px; } }
+  #nav > li {
+    float: left;
+    font-size: 14px;
+    line-height: 1; }
+    #nav > li > a {
+      display: block;
+      height: 56px;
+      padding: 0 10px;
+      line-height: 56px;
+      text-decoration: none;
+      color: #999; }
+      #nav > li > a:hover {
+        color: #fff; }
+      @media only screen and (max-width: 959px) {
+        #nav > li > a {
+          height: auto;
+          padding: 15px;
+          line-height: 1;
+          border-top: 1px solid rgba(255, 255, 255, 0.08); } }
+  #nav li {
+    display: list-item; }
+    @media only screen and (max-width: 959px) {
+      #nav li {
+        position: relative;
+        top: auto;
+        right: auto;
+        padding: 0 15px 15px 15px;
+        display: block; } }
+  #nav #t-search {
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    margin: 0; }
+    @media only screen and (max-width: 959px) {
+      #nav #t-search {
+        position: relative;
+        top: auto;
+        right: auto;
+        padding: 0 15px 15px 15px; } }
+  #nav #t-signin {
+    float: right; }
+    @media only screen and (max-width: 959px) {
+      #nav #t-signin {
+        display: block;
+        float: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none; }
+        #nav #t-signin a {
+          padding: 0 15px;
+          font-weight: normal;
+          height: 40px;
+          line-height: 40px;
+          text-transform: none;
+          white-space: nowrap;
+          color: #aaa;
+          border-bottom: none; } }
+  #nav #t-signup {
+    float: right; }
+    @media only screen and (max-width: 959px) {
+      #nav #t-signup {
+        display: none; } }
+  #nav #t-more > a span {
+    display: block;
+    text-indent: -9999px;
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-image: url(https://cdn.dribbble.com/assets/icon-more-dots-8624bddd5cc1950979b7c8dc571cf95d0e314600a9f8e43d99a17b57877808b6.png);
+    opacity: 0.5; }
+  #nav #t-shots:hover .tabs,
+  #nav #t-players:hover .tabs,
+  #nav #t-blog:hover .tabs,
+  #nav #t-podcast:hover .tabs,
+  #nav #t-meetups:hover .tabs,
+  #nav #t-jobs:hover .tabs,
+  #nav #t-more:hover .tabs {
+    display: block; }
+  #nav li ul.tabs {
+    position: absolute;
+    display: none;
+    float: left;
+    width: 180px;
+    margin-left: -5px;
+    padding: 0 0 10px;
+    background: rgba(47, 47, 47, 0.98);
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    z-index: 999; }
+    #nav li ul.tabs li {
+      clear: left;
+      margin: 0;
+      width: 100%; }
+    #nav li ul.tabs li:hover {
+      background: rgba(255, 255, 255, 0.15); }
+      #nav li ul.tabs li:hover a {
+        color: #fff; }
+    #nav li ul.tabs li.separate {
+      margin: 4px 0 0 0;
+      padding: 4px 0 0 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.15); }
+    #nav li ul.tabs a {
+      display: block;
+      padding: 5px 15px;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 1.3;
+      color: #999;
+      background: none;
+      box-shadow: none;
+      text-decoration: none; }
+
+@media only screen and (max-width: 959px) {
+  #search {
+    margin-top: 0; } }
+#search input {
+  vertical-align: middle;
+  margin: 0; }
+
+.search-text {
+  width: 190px;
+  padding: 5px 5px 5px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #bbb;
+  border: none;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 7px 50%;
+  background-image: url(https://cdn.dribbble.com/assets/icon-search-7a07ad9f258fc1d8c28a29faa5627b41c2cc353d138b6bc3e987e0719584ce69.png);
+  border-radius: 4px; }
+  @media screen and (max-width: 1050px) {
+    .search-text {
+      width: 120px; } }
+  @media screen and (max-width: 959px) {
+    .search-text {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      box-sizing: border-box; } }
+
+/*# sourceMappingURL=style.css.map */
