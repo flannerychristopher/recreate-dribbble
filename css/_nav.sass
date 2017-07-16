@@ -13,6 +13,9 @@
 #header-inner
   margin: 0 auto
   padding: 0 10px 0 30px
+  @media only screen and (max-width: 959px)
+    width: auto
+    padding: 0
 
 #logo
   float: left
@@ -57,23 +60,30 @@
     background-image: url(https://cdn.dribbble.com/assets/icon-hamburger-81081334c82d4efd0892cd8d11a37e0fc36874131c243994f36f3e783216d7b2.png?4)
     opacity: 0.5
 
+
+
 #nav
   margin: 0 250px 0 20px
   color: #777
+  @media screen and (max-width: 1050px)
+    margin-right: 180px
   @media screen and (max-width: 959px)
     float: left
     width: 100%
-    margin: 0 0 10px
+    margin: 0 0 10px 0
     text-align: left
-    // height: 0
-    // overflow: hidden
-    overflow: visible
-  @media screen and (max-width: 1050px)
-    margin-right: 180px
+    height: 0
+    overflow: hidden
   > li
     float: left
     font-size: 14px
     line-height: 1
+    @media screen and (max-width: 959px)
+      position: relative
+      float: none
+      text-align: left
+      background: rgba(47,47,47,0.98)
+
     > a
       display: block
       height: 56px
@@ -88,7 +98,7 @@
         padding: 15px
         line-height: 1
         border-top: 1px solid rgba(255,255,255,0.08)
-  li
+  // li
     display: list-item
     @media only screen and (max-width: 959px)
       position: relative
@@ -96,6 +106,32 @@
       right: auto
       padding: 0 15px 15px 15px
       display: block
+
+  #search
+    @media only screen and (max-width: 959px)
+      margin-top: 0
+    input
+      vertical-align: middle
+      margin: 0
+  .search-text
+    width: 190px
+    padding: 5px 5px 5px 25px
+    font-size: 13px
+    font-weight: 500
+    color: #bbb
+    border: none
+    background-color: #fff
+    background-repeat: no-repeat
+    background-position: 7px 50%
+    background-image: url(https://cdn.dribbble.com/assets/icon-search-7a07ad9f258fc1d8c28a29faa5627b41c2cc353d138b6bc3e987e0719584ce69.png)
+    border-radius: 4px
+    @media screen and (max-width: 1050px)
+      width: 120px
+    @media screen and (max-width: 959px)
+      width: 100%
+      padding-top: 10px
+      padding-bottom: 10px
+      box-sizing: border-box
 
   #t-search
     position: absolute
@@ -124,7 +160,6 @@
         text-transform: none
         white-space: nowrap
         color: #aaa
-        border-bottom: none
   #t-signup
     float: right
     @media only screen and (max-width: 959px)
@@ -137,15 +172,25 @@
     background-position: 0 50%
     background-image: url(https://cdn.dribbble.com/assets/icon-more-dots-8624bddd5cc1950979b7c8dc571cf95d0e314600a9f8e43d99a17b57877808b6.png)
     opacity: 0.5
+    @media only screen and (max-width: 959px)
+      display: inline
+      padding-left: 0
+      text-indent: 0
+      background: none
+      color: #999
+      opacity: 1
+      &:hover
+        color: #fff
 
-  #t-shots:hover .tabs,
-  #t-players:hover .tabs,
-  #t-blog:hover .tabs,
-  #t-podcast:hover .tabs,
-  #t-meetups:hover .tabs,
-  #t-jobs:hover .tabs,
-  #t-more:hover .tabs
-    display: block
+  @media only screen and (min-width: 960px)
+    #t-shots:hover .tabs,
+    #t-players:hover .tabs,
+    #t-blog:hover .tabs,
+    #t-podcast:hover .tabs,
+    #t-meetups:hover .tabs,
+    #t-jobs:hover .tabs,
+    #t-more:hover .tabs
+      display: block
 
   li ul.tabs
     position: absolute
@@ -184,32 +229,6 @@
       box-shadow: none
       text-decoration: none
 
-
-
-
-
-#search
-  @media only screen and (max-width: 959px)
-    margin-top: 0
-  input
-    vertical-align: middle
-    margin: 0
-.search-text
-  width: 190px
-  padding: 5px 5px 5px 25px
-  font-size: 13px
-  font-weight: 500
-  color: #bbb
-  border: none
-  background-color: #fff
-  background-repeat: no-repeat
-  background-position: 7px 50%
-  background-image: url(https://cdn.dribbble.com/assets/icon-search-7a07ad9f258fc1d8c28a29faa5627b41c2cc353d138b6bc3e987e0719584ce69.png)
-  border-radius: 4px
-  @media screen and (max-width: 1050px)
-    width: 120px
-  @media screen and (max-width: 959px)
-    width: 100%
-    padding-top: 10px
-    padding-bottom: 10px
-    box-sizing: border-box
+#header #header-inner .nav-open
+  height: auto
+  overflow: visible

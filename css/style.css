@@ -86,6 +86,10 @@ input {
 #header-inner {
   margin: 0 auto;
   padding: 0 10px 0 30px; }
+  @media only screen and (max-width: 959px) {
+    #header-inner {
+      width: auto;
+      padding: 0; } }
 
 #logo {
   float: left;
@@ -136,20 +140,27 @@ input {
 #nav {
   margin: 0 250px 0 20px;
   color: #777; }
+  @media screen and (max-width: 1050px) {
+    #nav {
+      margin-right: 180px; } }
   @media screen and (max-width: 959px) {
     #nav {
       float: left;
       width: 100%;
-      margin: 0 0 10px;
+      margin: 0 0 10px 0;
       text-align: left;
-      overflow: visible; } }
-  @media screen and (max-width: 1050px) {
-    #nav {
-      margin-right: 180px; } }
+      height: 0;
+      overflow: hidden; } }
   #nav > li {
     float: left;
     font-size: 14px;
     line-height: 1; }
+    @media screen and (max-width: 959px) {
+      #nav > li {
+        position: relative;
+        float: none;
+        text-align: left;
+        background: rgba(47, 47, 47, 0.98); } }
     #nav > li > a {
       display: block;
       height: 56px;
@@ -165,15 +176,33 @@ input {
           padding: 15px;
           line-height: 1;
           border-top: 1px solid rgba(255, 255, 255, 0.08); } }
-  #nav li {
-    display: list-item; }
-    @media only screen and (max-width: 959px) {
-      #nav li {
-        position: relative;
-        top: auto;
-        right: auto;
-        padding: 0 15px 15px 15px;
-        display: block; } }
+  @media only screen and (max-width: 959px) {
+    #nav #search {
+      margin-top: 0; } }
+  #nav #search input {
+    vertical-align: middle;
+    margin: 0; }
+  #nav .search-text {
+    width: 190px;
+    padding: 5px 5px 5px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #bbb;
+    border: none;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 7px 50%;
+    background-image: url(https://cdn.dribbble.com/assets/icon-search-7a07ad9f258fc1d8c28a29faa5627b41c2cc353d138b6bc3e987e0719584ce69.png);
+    border-radius: 4px; }
+    @media screen and (max-width: 1050px) {
+      #nav .search-text {
+        width: 120px; } }
+    @media screen and (max-width: 959px) {
+      #nav .search-text {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box; } }
   #nav #t-search {
     position: absolute;
     top: 16px;
@@ -202,8 +231,7 @@ input {
           line-height: 40px;
           text-transform: none;
           white-space: nowrap;
-          color: #aaa;
-          border-bottom: none; } }
+          color: #aaa; } }
   #nav #t-signup {
     float: right; }
     @media only screen and (max-width: 959px) {
@@ -217,14 +245,25 @@ input {
     background-position: 0 50%;
     background-image: url(https://cdn.dribbble.com/assets/icon-more-dots-8624bddd5cc1950979b7c8dc571cf95d0e314600a9f8e43d99a17b57877808b6.png);
     opacity: 0.5; }
-  #nav #t-shots:hover .tabs,
-  #nav #t-players:hover .tabs,
-  #nav #t-blog:hover .tabs,
-  #nav #t-podcast:hover .tabs,
-  #nav #t-meetups:hover .tabs,
-  #nav #t-jobs:hover .tabs,
-  #nav #t-more:hover .tabs {
-    display: block; }
+    @media only screen and (max-width: 959px) {
+      #nav #t-more > a span {
+        display: inline;
+        padding-left: 0;
+        text-indent: 0;
+        background: none;
+        color: #999;
+        opacity: 1; }
+        #nav #t-more > a span:hover {
+          color: #fff; } }
+  @media only screen and (min-width: 960px) {
+    #nav #t-shots:hover .tabs,
+    #nav #t-players:hover .tabs,
+    #nav #t-blog:hover .tabs,
+    #nav #t-podcast:hover .tabs,
+    #nav #t-meetups:hover .tabs,
+    #nav #t-jobs:hover .tabs,
+    #nav #t-more:hover .tabs {
+      display: block; } }
   #nav li ul.tabs {
     position: absolute;
     display: none;
@@ -262,33 +301,8 @@ input {
       box-shadow: none;
       text-decoration: none; }
 
-@media only screen and (max-width: 959px) {
-  #search {
-    margin-top: 0; } }
-#search input {
-  vertical-align: middle;
-  margin: 0; }
-
-.search-text {
-  width: 190px;
-  padding: 5px 5px 5px 25px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #bbb;
-  border: none;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: 7px 50%;
-  background-image: url(https://cdn.dribbble.com/assets/icon-search-7a07ad9f258fc1d8c28a29faa5627b41c2cc353d138b6bc3e987e0719584ce69.png);
-  border-radius: 4px; }
-  @media screen and (max-width: 1050px) {
-    .search-text {
-      width: 120px; } }
-  @media screen and (max-width: 959px) {
-    .search-text {
-      width: 100%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      box-sizing: border-box; } }
+#header #header-inner .nav-open {
+  height: auto;
+  overflow: visible; }
 
 /*# sourceMappingURL=style.css.map */
