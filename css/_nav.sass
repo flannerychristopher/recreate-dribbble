@@ -60,8 +60,6 @@
     background-image: url(https://cdn.dribbble.com/assets/icon-hamburger-81081334c82d4efd0892cd8d11a37e0fc36874131c243994f36f3e783216d7b2.png?4)
     opacity: 0.5
 
-
-
 #nav
   margin: 0 250px 0 20px
   color: #777
@@ -83,7 +81,6 @@
       float: none
       text-align: left
       background: rgba(47,47,47,0.98)
-
     > a
       display: block
       height: 56px
@@ -164,23 +161,46 @@
     float: right
     @media only screen and (max-width: 959px)
       display: none
-  #t-more > a span
-    display: block
-    text-indent: -9999px
-    padding-left: 22px
-    background-repeat: no-repeat
-    background-position: 0 50%
-    background-image: url(https://cdn.dribbble.com/assets/icon-more-dots-8624bddd5cc1950979b7c8dc571cf95d0e314600a9f8e43d99a17b57877808b6.png)
-    opacity: 0.5
-    @media only screen and (max-width: 959px)
-      display: inline
-      padding-left: 0
-      text-indent: 0
-      background: none
-      color: #999
-      opacity: 1
-      &:hover
-        color: #fff
+  #t-more-hide
+    text-align: center
+    display: none
+    margin: 0 auto
+    font-size: 14px
+    a:before
+      content: ''
+      position: absolute
+      left: 15px
+      width: 9px
+      height: 16px
+      background-image: url(https://cdn.dribbble.com/assets/icon-nav-arrow-right-7a750783a0432efe62eae279d433d5714705873d2ba55c03b849e14f6212bc10.png?1)
+
+  #t-more > a
+    span
+      display: block
+      text-indent: -9999px
+      padding-left: 22px
+      background-repeat: no-repeat
+      background-position: 0 50%
+      background-image: url(https://cdn.dribbble.com/assets/icon-more-dots-8624bddd5cc1950979b7c8dc571cf95d0e314600a9f8e43d99a17b57877808b6.png)
+      opacity: 0.5
+      @media only screen and (max-width: 959px)
+        display: inline
+        padding-left: 0
+        text-indent: 0
+        background: none
+        color: #999
+        opacity: 1
+        &:hover
+          color: #fff
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          top: 16px
+          right: 15px
+          width: 9px
+          height: 16px
+          background-image: url(https://cdn.dribbble.com/assets/icon-nav-arrow-left-16369f76159f8831973c451b08a7db7e9b9c288896b103f00c2b4d570360dd58.png?1)
 
   @media only screen and (min-width: 960px)
     #t-shots:hover .tabs,
@@ -206,10 +226,25 @@
     box-shadow: 1px 1px 1px rgba(0,0,0,0.3)
     background-clip: padding-box
     z-index: 999
+    @media only screen and (max-width: 959px)
+      // display: block
+      // position: static
+      float: none
+      width: 100%
+      left: 0
+      margin: 0
+      padding: 0
+      // background: none
+      border-radius: 0
+      box-shadow: none
     li
       clear: left
       margin: 0
       width: 100%
+      @media only screen and (max-width: 959px)
+        display: block
+        clear: left
+        margin: 0
     li:hover
       background: rgba(255,255,255,0.15)
       a
@@ -228,6 +263,14 @@
       background: none
       box-shadow: none
       text-decoration: none
+      @media only screen and (max-width: 959px)
+        padding: 15px
+        font-size: 13px
+        font-weight: normal
+        height: auto
+        line-height: 1
+        text-transform: none
+        color: #999
 
 #header #header-inner .nav-open
   height: auto

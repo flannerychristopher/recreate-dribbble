@@ -237,6 +237,18 @@ input {
     @media only screen and (max-width: 959px) {
       #nav #t-signup {
         display: none; } }
+  #nav #t-more-hide {
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    font-size: 14px; }
+    #nav #t-more-hide a:before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      width: 9px;
+      height: 16px;
+      background-image: url(https://cdn.dribbble.com/assets/icon-nav-arrow-right-7a750783a0432efe62eae279d433d5714705873d2ba55c03b849e14f6212bc10.png?1); }
   #nav #t-more > a span {
     display: block;
     text-indent: -9999px;
@@ -254,7 +266,16 @@ input {
         color: #999;
         opacity: 1; }
         #nav #t-more > a span:hover {
-          color: #fff; } }
+          color: #fff; }
+        #nav #t-more > a span:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 16px;
+          right: 15px;
+          width: 9px;
+          height: 16px;
+          background-image: url(https://cdn.dribbble.com/assets/icon-nav-arrow-left-16369f76159f8831973c451b08a7db7e9b9c288896b103f00c2b4d570360dd58.png?1); } }
   @media only screen and (min-width: 960px) {
     #nav #t-shots:hover .tabs,
     #nav #t-players:hover .tabs,
@@ -278,10 +299,24 @@ input {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     background-clip: padding-box;
     z-index: 999; }
+    @media only screen and (max-width: 959px) {
+      #nav li ul.tabs {
+        float: none;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none; } }
     #nav li ul.tabs li {
       clear: left;
       margin: 0;
       width: 100%; }
+      @media only screen and (max-width: 959px) {
+        #nav li ul.tabs li {
+          display: block;
+          clear: left;
+          margin: 0; } }
     #nav li ul.tabs li:hover {
       background: rgba(255, 255, 255, 0.15); }
       #nav li ul.tabs li:hover a {
@@ -300,6 +335,15 @@ input {
       background: none;
       box-shadow: none;
       text-decoration: none; }
+      @media only screen and (max-width: 959px) {
+        #nav li ul.tabs a {
+          padding: 15px;
+          font-size: 13px;
+          font-weight: normal;
+          height: auto;
+          line-height: 1;
+          text-transform: none;
+          color: #999; } }
 
 #header #header-inner .nav-open {
   height: auto;
