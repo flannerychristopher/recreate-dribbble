@@ -574,66 +574,58 @@ a.action > span:hover .actions-list {
     clear: both;
     visibility: hidden; }
 
-li.group {
-  width: calc(20% - 30px);
-  float: left;
-  padding: 0;
-  margin: 0 15px 30px 15px; }
-  @media screen and (max-width: 2279px) {
-    li.group {
-      width: calc(20% - 30px); } }
-  @media screen and (max-width: 1909px) {
-    li.group {
-      width: calc(25% - 30px); } }
-  @media screen and (max-width: 1539px) {
-    li.group {
-      width: calc(33.333% - 30px); } }
-  @media screen and (max-width: 1169px) {
-    li.group {
-      width: calc(50% - 30px); } }
-  @media screen and (max-width: 767px) {
-    li.group {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0; } }
-
 ol.dribbbles {
-  max-width: 2700px;
+  max-width: 2000px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto; }
+  @media screen and (max-width: 2059px) {
+    ol.dribbbles {
+      max-width: 1750px; } }
+  @media screen and (max-width: 1809px) {
+    ol.dribbbles {
+      max-width: 1500px; } }
   @media screen and (max-width: 1539px) and (min-width: 1411px) {
     ol.dribbbles {
-      max-width: 1350px; } }
-  @media screen and (max-width: 1169px) and (min-width: 961px) {
-    ol.dribbbles {
-      max-width: 900px; } }
-  @media screen and (max-width: 767px) {
-    ol.dribbbles {
-      max-width: 420px; } }
-  @media screen and (max-width: 2059px) {
-    ol.dribbbles li.group {
-      width: calc(100% / 7 - 30px); } }
-  @media screen and (max-width: 1809px) {
-    ol.dribbbles li.group {
-      width: calc(100% / 6 - 30px); } }
-  @media screen and (max-width: 1559px) {
-    ol.dribbbles li.group {
-      width: calc(100% / 5 - 30px); } }
+      max-width: 1250px; } }
   @media screen and (max-width: 1309px) {
-    ol.dribbbles li.group {
-      width: calc(100% / 4 - 30px); } }
+    ol.dribbbles {
+      max-width: 1000px; } }
   @media screen and (max-width: 1059px) {
-    ol.dribbbles li.group {
-      width: calc(100% / 3 - 30px); } }
+    ol.dribbbles {
+      max-width: 750px; } }
   @media screen and (max-width: 809px) {
-    ol.dribbbles li.group {
-      width: calc(100% / 2 - 30px); } }
-  @media screen and (max-width: 530px) {
-    ol.dribbbles li.group {
-      width: 47.5%;
-      margin: 0 5% 5% 0; } }
+    ol.dribbbles {
+      max-width: 500px; } }
+  ol.dribbbles li.group {
+    position: relative;
+    width: 220px;
+    float: left;
+    padding-left: 0;
+    margin: 0 15px 30px 15px; }
+    @media screen and (max-width: 2059px) {
+      ol.dribbbles li.group {
+        width: calc(100% / 7 - 30px); } }
+    @media screen and (max-width: 1809px) {
+      ol.dribbbles li.group {
+        width: calc(100% / 6 - 30px); } }
+    @media screen and (max-width: 1559px) {
+      ol.dribbbles li.group {
+        width: calc(100% / 5 - 30px); } }
+    @media screen and (max-width: 1309px) {
+      ol.dribbbles li.group {
+        width: calc(100% / 4 - 30px); } }
+    @media screen and (max-width: 1059px) {
+      ol.dribbbles li.group {
+        width: calc(100% / 3 - 30px); } }
+    @media screen and (max-width: 809px) {
+      ol.dribbbles li.group {
+        width: calc(100% / 2 - 30px); } }
+    @media screen and (max-width: 530px) {
+      ol.dribbbles li.group {
+        width: 47.5%;
+        margin: 0 5% 5% 0; } }
 
 div.dribbble {
   position: relative;
@@ -646,11 +638,15 @@ div.dribbble {
   padding: 10px; }
 
 .dribbble-img {
-  width: 100%;
   max-width: 100%;
   height: 0;
   padding-bottom: 75%;
   overflow: hidden; }
+  .dribbble-img source {
+    outline: #012426 solid 1px !important; }
+  .dribbble-img img {
+    border: none;
+    outline: #22746b solid 1px !important; }
 
 a.dribbble-over {
   opacity: 0;
@@ -774,5 +770,29 @@ ol.dribbbles li.group h2 {
 
 ol.dribbbles li.group.team h2 span.attribution-user {
   display: none; }
+
+div.infinite {
+  text-align: center; }
+  div.infinite a {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 12px;
+    font-size: 14px;
+    max-width: 1470px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #3a8bbb; }
+  div.infinite a.sign-up-to-continue {
+    max-width: 400px;
+    font-weight: bold; }
+  div.infinite a.form-sub {
+    color: #fff;
+    background: #ea4c89;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    vertical-align: middle;
+    cursor: middle;
+    border: none;
+    border-radius: 4px; }
 
 /*# sourceMappingURL=style.css.map */
