@@ -449,7 +449,8 @@ div.full-tabs {
   div.full-tabs .screenshot-actions {
     position: absolute;
     top: 11px;
-    right: 21px; }
+    right: 21px;
+    z-index: 1; }
     @media only screen and (max-width: 800px) {
       div.full-tabs .screenshot-actions {
         top: 4px;
@@ -602,15 +603,37 @@ ol.dribbbles {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 auto; }
-  @media screen and (max-width: 1169px) and (min-width: 961px) {
-    ol.dribbbles {
-      max-width: 900px; } }
   @media screen and (max-width: 1539px) and (min-width: 1411px) {
     ol.dribbbles {
       max-width: 1350px; } }
+  @media screen and (max-width: 1169px) and (min-width: 961px) {
+    ol.dribbbles {
+      max-width: 900px; } }
   @media screen and (max-width: 767px) {
     ol.dribbbles {
       max-width: 420px; } }
+  @media screen and (max-width: 2059px) {
+    ol.dribbbles li.group {
+      width: calc(100% / 7 - 30px); } }
+  @media screen and (max-width: 1809px) {
+    ol.dribbbles li.group {
+      width: calc(100% / 6 - 30px); } }
+  @media screen and (max-width: 1559px) {
+    ol.dribbbles li.group {
+      width: calc(100% / 5 - 30px); } }
+  @media screen and (max-width: 1309px) {
+    ol.dribbbles li.group {
+      width: calc(100% / 4 - 30px); } }
+  @media screen and (max-width: 1059px) {
+    ol.dribbbles li.group {
+      width: calc(100% / 3 - 30px); } }
+  @media screen and (max-width: 809px) {
+    ol.dribbbles li.group {
+      width: calc(100% / 2 - 30px); } }
+  @media screen and (max-width: 530px) {
+    ol.dribbbles li.group {
+      width: 47.5%;
+      margin: 0 5% 5% 0; } }
 
 div.dribbble {
   position: relative;
@@ -623,6 +646,7 @@ div.dribbble {
   padding: 10px; }
 
 .dribbble-img {
+  width: 100%;
   max-width: 100%;
   height: 0;
   padding-bottom: 75%;
