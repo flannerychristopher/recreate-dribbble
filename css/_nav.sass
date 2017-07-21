@@ -161,7 +161,8 @@
     float: right
     @media only screen and (max-width: 959px)
       display: none
-  #t-more-hide
+
+  #t-more-back
     text-align: center
     display: none
     margin: 0 auto
@@ -173,7 +174,6 @@
       width: 9px
       height: 16px
       background-image: url(https://cdn.dribbble.com/assets/icon-nav-arrow-right-7a750783a0432efe62eae279d433d5714705873d2ba55c03b849e14f6212bc10.png?1)
-
   #t-more > a
     span
       display: block
@@ -183,6 +183,8 @@
       background-position: 0 50%
       background-image: url(https://cdn.dribbble.com/assets/icon-more-dots-8624bddd5cc1950979b7c8dc571cf95d0e314600a9f8e43d99a17b57877808b6.png)
       opacity: 0.5
+      &:hover
+        opacity: 1
       @media only screen and (max-width: 959px)
         display: inline
         padding-left: 0

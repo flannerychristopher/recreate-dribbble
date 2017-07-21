@@ -237,12 +237,12 @@ input {
     @media only screen and (max-width: 959px) {
       #nav #t-signup {
         display: none; } }
-  #nav #t-more-hide {
+  #nav #t-more-back {
     text-align: center;
     display: none;
     margin: 0 auto;
     font-size: 14px; }
-    #nav #t-more-hide a:before {
+    #nav #t-more-back a:before {
       content: "";
       position: absolute;
       left: 15px;
@@ -257,6 +257,8 @@ input {
     background-position: 0 50%;
     background-image: url(https://cdn.dribbble.com/assets/icon-more-dots-8624bddd5cc1950979b7c8dc571cf95d0e314600a9f8e43d99a17b57877808b6.png);
     opacity: 0.5; }
+    #nav #t-more > a span:hover {
+      opacity: 1; }
     @media only screen and (max-width: 959px) {
       #nav #t-more > a span {
         display: inline;
@@ -348,5 +350,174 @@ input {
 #header #header-inner .nav-open {
   height: auto;
   overflow: visible; }
+
+#wrap {
+  position: relative;
+  background: #f4f4f4; }
+
+.full-pitch {
+  width: auto;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  background: #252525; }
+  @media only screen and (max-width: 959px) {
+    .full-pitch {
+      margin-top: 40px; } }
+  .full-pitch h1 {
+    color: #bbb;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.3; }
+    .full-pitch h1 strong {
+      color: #fff;
+      font-weight: 500; }
+  .full-pitch .full-pitch-actions {
+    margin-top: 20px; }
+    .full-pitch .full-pitch-actions .form-sub {
+      padding: 10px 30px;
+      color: #fff;
+      text-decoration: none;
+      background: #ea4c89;
+      display: inline-block;
+      font-size: 13px;
+      line-height: 17px;
+      letter-spacing: 0.04em;
+      vertical-align: middle;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px; }
+
+div.full-tabs {
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 1px solid #e5e5e5;
+  background: rgba(255, 255, 255, 0.6);
+  position: relative; }
+  div.full-tabs .full-tabs-links {
+    padding: 0 30px;
+    text-align: center; }
+    div.full-tabs .full-tabs-links > li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      font-size: 14px;
+      line-height: 1; }
+    div.full-tabs .full-tabs-links li {
+      text-align: left; }
+    div.full-tabs .full-tabs-links li.more > a {
+      color: #444;
+      font-weight: bold;
+      line-height: 50px;
+      text-decoration: none;
+      padding-right: 23px;
+      background-repeat: no-repeat;
+      background-position: 100% 50%;
+      background-image: url(https://cdn.dribbble.com/assets/icon-dd-arrow-5cd53c3f7d2d5232122f093985affef2493f0e1b8af5cdc559180fdeff62366c.png); }
+    div.full-tabs .full-tabs-links li.more:hover .sub {
+      display: block; }
+    div.full-tabs .full-tabs-links li.more .sub {
+      display: none;
+      position: absolute;
+      width: 200px;
+      margin: -5px 0 0 -15px;
+      padding: 6px 0 10px 0;
+      font-size: 13px;
+      background: #fbfbfb;
+      border-radius: 4px;
+      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+      z-index: 999; }
+      div.full-tabs .full-tabs-links li.more .sub a {
+        display: block;
+        height: auto;
+        padding: 5px 15px;
+        color: #999;
+        text-decoration: none; }
+  div.full-tabs .screenshot-actions {
+    position: absolute;
+    top: 11px;
+    right: 21px; }
+    div.full-tabs .screenshot-actions .actions-menu {
+      float: left;
+      position: relative; }
+      div.full-tabs .screenshot-actions .actions-menu:hover .actions-list {
+        display: block; }
+      div.full-tabs .screenshot-actions .actions-menu a.grid {
+        float: none;
+        display: block;
+        margin-top: -1ox;
+        padding-left: 9px;
+        padding-right: 9px;
+        background: none; }
+        div.full-tabs .screenshot-actions .actions-menu a.grid:hover {
+          background: #333;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0; }
+        div.full-tabs .screenshot-actions .actions-menu a.grid span {
+          display: inline-block;
+          height: 16px;
+          padding-left: 16px;
+          text-indent: -9999px;
+          background-repeat: no-repeat;
+          background-image: url(https://cdn.dribbble.com/assets/icon-shot-options-e5ecd0cd64a0a2d9f4439646908f4d50994452de9c1cc8a7f65448289063f60c.png?2); }
+      div.full-tabs .screenshot-actions .actions-menu a.action {
+        color: #fff;
+        margin: 0;
+        padding: 7px 12px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 4px; }
+      div.full-tabs .screenshot-actions .actions-menu .actions-list {
+        display: none;
+        position: absolute;
+        float: left;
+        width: 220px;
+        text-align: left;
+        right: 0;
+        border-radius: 6px;
+        border-top-right-radius: 0;
+        padding: 5px 0;
+        padding-bottom: 10px;
+        background: #333;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+        div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display {
+          padding: 5px 15px; }
+          div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display h3 {
+            padding: 0;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: #ccc;
+            background: none; }
+          div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display .large-small {
+            over-flow: hidden; }
+            div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display .large-small li:first-child {
+              padding-left: 0; }
+            div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display .large-small li {
+              float: left;
+              width: 23%;
+              padding-left: 2.666%; }
+              div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display .large-small li a {
+                display: block;
+                height: 42px;
+                width: 100%;
+                margin: 5px 0 0 0;
+                padding: 0;
+                text-align: center;
+                background: #505050;
+                color: #999;
+                font-size: 13px;
+                font-weight: normal;
+                border-radius: 2px; }
+                div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display .large-small li a:hover {
+                  opacity: 0.5; }
+                div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display .large-small li a svg {
+                  height: 42px;
+                  width: 42px;
+                  overflow: hidden;
+                  margin: 0 auto; }
+
+a.action > span:hover .actions-list {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
