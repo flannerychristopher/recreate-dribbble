@@ -40,6 +40,8 @@ div.full-tabs
   border-bottom: 1px solid #e5e5e5
   background: rgba(255,255,255,0.6)
   position: relative
+  @media only screen and (max-width: 800px)
+    min-height: 0px
   .full-tabs-links
     padding: 0 30px
     text-align: center
@@ -48,6 +50,14 @@ div.full-tabs
       margin: 0 20px 0 0
       font-size: 14px
       line-height: 1
+      @media only screen and (max-width: 800px)
+        margin-right: 0
+        float: none
+        margin: 0 10px 0 0
+        padding: 0 0
+        font-size: 12px
+        line-height: 1
+
     li
       text-align: left
     li.more
@@ -60,6 +70,9 @@ div.full-tabs
         background-repeat: no-repeat
         background-position: 100% 50%
         background-image: url(https://cdn.dribbble.com/assets/icon-dd-arrow-5cd53c3f7d2d5232122f093985affef2493f0e1b8af5cdc559180fdeff62366c.png)
+        @media only screen and (max-width: 800px)
+          line-height: 36px
+
       &:hover .sub
         display: block
       .sub
@@ -83,6 +96,9 @@ div.full-tabs
     position: absolute
     top: 11px
     right: 21px
+    @media only screen and (max-width: 800px)
+      top: 4px
+      right: 2px
     .actions-menu
       float: left
       position: relative
@@ -92,7 +108,7 @@ div.full-tabs
       a.grid
         float: none
         display: block
-        margin-top: -1ox
+        margin-top: -1px
         padding-left: 9px
         padding-right: 9px
         background: none
