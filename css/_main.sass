@@ -122,9 +122,13 @@ a.dribbble-over
   line-height: 2
   text-decoration: none
   color: #888
+  background: #fff
   background: rgba(255,255,255,0.96)
   overflow: hidden
   box-sizing: border-box
+  transition: opacity 250ms ease
+  &:hover
+    opacity: 1
   strong
     font-size: 15px
     margin-bottom: 10px
@@ -136,8 +140,8 @@ a.dribbble-over
     white-space: nowrap
     text-overflow: ellipsis
     overflow: hidden
-  comment
-    font-size: 13px
+  .comment
+    font-size: 11px
     display: block
     margin: 0 0 10px 0
     line-height: 1.4
@@ -172,7 +176,6 @@ ul.tools
       background-position: 0 0
       background-image: url(https://cdn.dribbble.com/assets/icon-hearts-c75259e8ce04c45abf11f8a378bb2f6a218a4ff116c2eb93132cf01deb365964.png?2)
     a
-      text-decoration: none
       color: #aaa
   li.cmnt span
     padding-left: 15px
@@ -205,10 +208,13 @@ ol.dribbbles li.group h2
   line-height: 1.4
   color: #999
   vertical-align: middle
+  &:hover span.badge
+    opacity: 1
   a
     font-weight: bold
     color: #3a8bbb
-    text-decoration: none
+    &:hover > img
+      opacity: 0.8
     img
       float: left
       width: 16px

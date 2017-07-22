@@ -73,6 +73,8 @@ input {
 a {
   text-decoration: none;
   color: #3a8bbb; }
+  a:hover {
+    color: #1e6189; }
   a img {
     border: none; }
 
@@ -398,6 +400,8 @@ a {
       cursor: pointer;
       border: none;
       border-radius: 4px; }
+      .full-pitch .full-pitch-actions .form-sub:hover {
+        background-color: #df3e7b; }
 
 div.full-tabs {
   width: 100%;
@@ -682,10 +686,15 @@ a.dribbble-over {
   line-height: 2;
   text-decoration: none;
   color: #888;
+  background: #fff;
   background: rgba(255, 255, 255, 0.96);
   overflow: hidden;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease; }
+  a.dribbble-over:hover {
+    opacity: 1; }
   a.dribbble-over strong {
     font-size: 15px;
     margin-bottom: 10px;
@@ -697,8 +706,8 @@ a.dribbble-over {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
-  a.dribbble-over comment {
-    font-size: 13px;
+  a.dribbble-over .comment {
+    font-size: 11px;
     display: block;
     margin: 0 0 10px 0;
     line-height: 1.4;
@@ -733,7 +742,6 @@ ul.tools {
       background-position: 0 0;
       background-image: url(https://cdn.dribbble.com/assets/icon-hearts-c75259e8ce04c45abf11f8a378bb2f6a218a4ff116c2eb93132cf01deb365964.png?2); }
     ul.tools li a {
-      text-decoration: none;
       color: #aaa; }
   ul.tools li.cmnt span {
     padding-left: 15px;
@@ -766,10 +774,13 @@ ol.dribbbles li.group h2 {
   line-height: 1.4;
   color: #999;
   vertical-align: middle; }
+  ol.dribbbles li.group h2:hover span.badge {
+    opacity: 1; }
   ol.dribbbles li.group h2 a {
     font-weight: bold;
-    color: #3a8bbb;
-    text-decoration: none; }
+    color: #3a8bbb; }
+    ol.dribbbles li.group h2 a:hover > img {
+      opacity: 0.8; }
     ol.dribbbles li.group h2 a img {
       float: left;
       width: 16px;
@@ -803,11 +814,9 @@ div.infinite {
     max-width: 1470px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    text-decoration: none;
-    color: #3a8bbb; }
-  div.infinite a.sign-up-to-continue {
-    max-width: 400px;
     font-weight: bold; }
+  div.infinite a.sign-up-to-continue {
+    max-width: 400px; }
   div.infinite a.form-sub {
     color: #fff;
     background: #ea4c89;
@@ -817,6 +826,8 @@ div.infinite {
     cursor: middle;
     border: none;
     border-radius: 4px; }
+    div.infinite a.form-sub:hover {
+      background-color: #df3e7b; }
 
 #footer {
   border-top: 1px solid #e5e5e5;
@@ -879,6 +890,8 @@ div.infinite {
         line-height: 1.8;
         white-space: nowrap;
         color: #999; }
+        .footer-mod ul.extra-links li a:hover {
+          color: #444; }
   .footer-mod h3 {
     margin: 2px 0 14px 0;
     font-size: 13px;
@@ -887,6 +900,8 @@ div.infinite {
     .footer-mod h3 a {
       font-weight: bold;
       color: #999; }
+      .footer-mod h3 a:hover {
+        color: #444; }
   .footer-mod .jobs-list {
     margin: -2px 0 0 0; }
     .footer-mod .jobs-list li {
@@ -917,6 +932,9 @@ div.infinite {
         display: block;
         margin: 0 0 0 5px;
         color: #444; }
+        .footer-mod .jobs-list li a.item-link:hover {
+          background: none;
+          opacity: 0.8; }
         .footer-mod .jobs-list li a.item-link .item-info {
           float: none;
           width: calc(100% - 40%); }
@@ -945,6 +963,8 @@ div.ad {
     left: 0; }
   div.ad a {
     color: #777; }
+    div.ad a:hover {
+      color: #444; }
 
 h4#pixels-total {
   position: relative;
@@ -978,9 +998,13 @@ p.follow a {
   margin: 0 10px 0 0; }
   p.follow a img {
     opacity: 0.37; }
+    p.follow a img:hover {
+      opacity: 0.72; }
 
 p.network a {
   font-weight: bold;
   color: #999; }
+  p.network a:hover {
+    color: #444; }
 
 /*# sourceMappingURL=style.css.map */
