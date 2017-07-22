@@ -71,7 +71,8 @@ input {
   font: 13.33333px Arial; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3a8bbb; }
   a img {
     border: none; }
 
@@ -112,6 +113,7 @@ a {
     background-position: 0 50%;
     background-image: url(https://cdn.dribbble.com/assets/logo-small-4612353cefa78dfe35ba5e8e9d35da9f9305a3a516ef9675b5c37004c5862b6d.png);
     opacity: 1;
+    -webkit-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease; }
     @media only screen and (max-width: 959px) {
       #logo a {
@@ -207,7 +209,8 @@ a {
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
-        box-sizing: border-box; } }
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; } }
   #nav #t-search {
     position: absolute;
     top: 16px;
@@ -303,7 +306,8 @@ a {
     border-radius: 6px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     background-clip: padding-box;
     z-index: 999; }
     @media only screen and (max-width: 959px) {
@@ -314,7 +318,8 @@ a {
         margin: 0;
         padding: 0;
         border-radius: 0;
-        box-shadow: none; } }
+        -webkit-box-shadow: none;
+                box-shadow: none; } }
     #nav li ul.tabs li {
       clear: left;
       margin: 0;
@@ -340,7 +345,8 @@ a {
       line-height: 1.3;
       color: #999;
       background: none;
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
       text-decoration: none; }
       @media only screen and (max-width: 959px) {
         #nav li ul.tabs a {
@@ -443,7 +449,8 @@ div.full-tabs {
       font-size: 13px;
       background: #fbfbfb;
       border-radius: 4px;
-      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+              box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
       z-index: 999; }
       div.full-tabs .full-tabs-links li.more .sub a {
         display: block;
@@ -502,7 +509,8 @@ div.full-tabs {
         padding: 5px 0;
         padding-bottom: 10px;
         background: #333;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+        -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
         div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display {
           padding: 5px 15px; }
           div.full-tabs .screenshot-actions .actions-menu .actions-list .shot-display h3 {
@@ -547,7 +555,8 @@ a.action > span:hover .actions-list {
 .wrap-inner {
   padding: 30px 30px 40px 30px;
   width: 100vw;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   @media only screen and (max-width: 959px) {
     .wrap-inner {
       padding: 15px; } }
@@ -581,9 +590,15 @@ a.action > span:hover .actions-list {
 
 ol.dribbbles {
   max-width: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 0 auto; }
   @media screen and (max-width: 2059px) {
     ol.dribbbles {
@@ -637,7 +652,8 @@ div.dribbble {
   clear: left;
   background: #fff;
   border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
 
 .dribbble-shot {
   padding: 10px; }
@@ -668,7 +684,8 @@ a.dribbble-over {
   color: #888;
   background: rgba(255, 255, 255, 0.96);
   overflow: hidden;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   a.dribbble-over strong {
     font-size: 15px;
     margin-bottom: 10px;
@@ -784,7 +801,8 @@ div.infinite {
     padding: 15px 12px;
     font-size: 14px;
     max-width: 1470px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-decoration: none;
     color: #3a8bbb; }
   div.infinite a.sign-up-to-continue {
@@ -806,7 +824,8 @@ div.infinite {
   z-index: 2;
   position: relative; }
   #footer p {
-    margin: 0 50px 10px 0; }
+    margin: 0 50px 10px 0;
+    line-height: 1.6; }
 
 #footer-inner {
   margin: 0 auto;
@@ -821,7 +840,8 @@ div.infinite {
   float: left;
   width: 25%;
   margin: 0 0 20px 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   @media only screen and (max-width: 800px) {
     .footer-mod {
       float: none;
@@ -840,14 +860,18 @@ div.infinite {
     max-width: 300px; }
   .footer-mod ul.extra-links {
     margin-right: 50px;
-    column-count: 3;
-    column-gap: 20px; }
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 20px;
+            column-gap: 20px; }
     @media only screen and (max-width: 1100px) {
       .footer-mod ul.extra-links {
-        column-count: 2; } }
+        -webkit-column-count: 2;
+                column-count: 2; } }
     @media only screen and (max-width: 800px) {
       .footer-mod ul.extra-links {
-        column-count: 3; } }
+        -webkit-column-count: 3;
+                column-count: 3; } }
     .footer-mod ul.extra-links li {
       display: list-item; }
       .footer-mod ul.extra-links li a {
@@ -908,5 +932,55 @@ div.infinite {
             display: block; }
         .footer-mod .jobs-list li a.item-link .item-meta {
           display: none; }
+
+div.ad {
+  font-size: 13px;
+  line-height: 1.5;
+  padding-left: 145px;
+  position: relative;
+  min-height: 100px; }
+  div.ad a.carbon-img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  div.ad a {
+    color: #777; }
+
+h4#pixels-total {
+  position: relative;
+  width: 25%;
+  min-height: 56px;
+  float: right;
+  padding: 0 0 0 54px;
+  font-size: 1.1em;
+  line-height: 1.4;
+  font-weight: normal;
+  color: #777;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-image: url(https://cdn.dribbble.com/assets/ball-2acfbb9fdf187a34b07a7cc209d07025b39697eba6302c54942a556c10b3fa94.png);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media only screen and (max-width: 959px) {
+    h4#pixels-total {
+      float: none;
+      width: auto;
+      margin: 0 0 20px 0; } }
+  h4#pixels-total strong {
+    display: block;
+    padding-top: 4px;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #333; }
+
+p.follow a {
+  margin: 0 10px 0 0; }
+  p.follow a img {
+    opacity: 0.37; }
+
+p.network a {
+  font-weight: bold;
+  color: #999; }
 
 /*# sourceMappingURL=style.css.map */
